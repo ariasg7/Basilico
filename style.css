@@ -88,6 +88,71 @@ footer {
   text-align: center;
 }
 
+
+.info {
+  background-color: #111;
+  padding: 3rem 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-box {
+  flex: 1 1 300px;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.info-box .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-box .text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-box .text p {
+  font-size: 1rem;
+  color: #ccc;
+}
+.hours {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.hours li {
+  margin-bottom: 0.3rem;
+}
+.info-box:hover {
+  color: #ff6347;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 99, 71, 0.5);
+}
+
+.info-box:hover .text h3,
+.info-box:hover .text p,
+.info-box:hover .text li {
+  color: #ff6347;
+}
+.info-box:hover .icon {
+  color: #ff6347;
+}
 /* Responsive */
 @media (max-width: 768px) {
   .topbar {
@@ -112,5 +177,9 @@ footer {
 
   .tagline {
     font-size: 1.2rem;
+  }
+  .info-row {
+    flex-direction: column;
+    align-items: center;
   }
 }
